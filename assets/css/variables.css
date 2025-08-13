@@ -1,0 +1,67 @@
+:root {
+    /* 🎨 Color Palette */
+    --green-1: #159f4a;
+
+    --offw-2: #ffffff;
+    --offw-3: #e6e6e6;
+    --offw-1: #d6d6d6;
+    --grey-1: #A1A1A2;
+
+    /* --grey-1: #04254d; */
+    --darkgrey-1: #555557;
+    --darkgrey-2: rgb(13, 45, 111);
+    --primary-glow-1: rgb(255, 255, 255);
+    --secondary-glow-1: rgb(23, 23, 23);
+
+
+    --secondary-glow-2: rgba(248, 76, 24, 0.9);
+
+    --orange-1: #fbbc47;
+    --orange-glow-1: #eb530c;
+
+    --hblue1: #0047a4;
+    --hblue2: #00e5ff;
+
+    --border-thickness-1: 5px;
+
+    --bright-green-1: #98e0b2;
+
+    --dark-text-background-1: rgb(6, 18, 31);
+    
+
+
+    --font-color-def: #159f4a;
+  
+
+    /* 🖼️ Backgrounds and text */
+    --bg-color: #ffffff;
+    --text-color: #212529;
+    --text-color2:rgb(14, 15, 17);
+  
+    /* 🅰️ Typography */
+    --font-family-sans: 'Helvetica Neue', Arial, sans-serif;
+    --font-size-base: 20px;
+    --font-size-sm: 14px;
+    --font-size-lg: 20px;
+    --line-height-base: 1.5;
+  
+    /* 📦 Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 40px;
+  
+    /* 🧱 Borders & Radius */
+    --border-radius: 6px;
+    --border-color: #dee2e6;
+  
+    /* 🕶️ Shadows */
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.2);
+  
+    /* ⚡ Transitions */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-slow: 0.4s ease-in-out;
+  }

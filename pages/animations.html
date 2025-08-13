@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ryan Holmes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="icon" type="image/png" href="../assets/images/r_favicon.png" sizes="32x32">
+
+</head>
+
+<body>
+  <div class="background-layer"></div>
+
+  <div class="ryantitle">
+    <header class="header">
+      <h1>Ryan Holmes</h1>
+    </header>
+  </div>
+
+  <div class="sidebar">
+    <div class="main-logo-img"></div>
+    <div class="sidebarmodules">
+        <a href="../index.html"><i class="fas fa-home"></i>About Ryan</a>
+        <a href="../pages/publications.html"><i class="fa-solid fa-book"></i></i>Publications</a>
+        <a href="../pages/animations.html"><i class="fa-solid fa-circle-play"></i>Data Visualization</a>
+        <!-- <a href="../pages/education.html"><i class="fa-solid fa-graduation-cap"></i>Education</a> -->
+        <a href="../pages/artwork.html"><i class="fa-solid fa-palette"></i>Artwork</a>
+        <a href="https://github.com/cranialplating" target="_blank"><i class="fab fa-github"></i>Github</a>
+        <a href="mailto:11ryanholmes@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+        <a href="https://linkedin.com/in/ryan-g-holmes/" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+        <div class="main-box-base">
+        <div class="main-box-tab">Why Visualize?</div>
+        <div class="main-box-content">
+            <p> As AI & ML architectures become increasingly complex, I believe data visualization
+               will serve as a crucial bridge between human understanding and 
+               machine intelligence. Visual tools enable us to interpret model behavior, 
+               uncover patterns, and build trust by making opaque systems more transparent 
+               and explainable. The visuals I create during my research process often uncover 
+               hidden insights that would be difficult to detect through raw data alone. 
+               These visualizations have directly led to meaningful improvements in model 
+               performance and understanding like in the example below with .</p>
+        </div>
+      </div>
+
+      <!-- <div class="video-wrapper">
+        <video class="video" style="width:800px;" src="../assets/videos/r2kmeans_k7_w10.mp4" controls autoplay loop muted playsinline>
+          Your browser does not support the video tag.</video>
+      </div> -->
+
+      <!-- <div class="image-grid">
+        <div class="vid-item"><video style="width:800px;" src="../assets/videos/r2kmeans_k7_w10.mp4" controls autoplay loop muted playsinline>
+              Your browser does not support the video tag.</video>
+        <p class="caption">R2K-Means clustering on financial time series</p></div>
+      </div> -->
+
+        <div class="image-grid">
+        <div class="vid-item"><video src="../assets/videos/theta_35_all_models.mp4" controls autoplay loop muted playsinline>
+              Your browser does not support the video tag.</video>
+        <p class="caption">R2-PCA Model Comparison Animation</p></div>
+      </div>
+
+      <div class="main-box-base">
+      <div class="main-box-tab">R2-PCA Comparison</div>
+      <div class="main-box-content">
+          <p>
+            Visualizations can uncover insights into how models perform that raw metrics often 
+            miss. Below is a comparison between R2-PCA, standard PCA, and an industry model, 
+            I-PCA. The key to visualizing high-dimensional models is designing simple, low-dimensional tests—an approach that works for both supervised and unsupervised models like PCA.
+            </p>
+            <p>
+              Because PCA is computed on a covariance matrix, I created a simple “cross”-shaped 
+              dataset that can be rotated using a projection matrix to simulate market movement. By increasing the rotation angle (θ), we can test whether models lose track of the data they are trying to represent. This test revealed that even small rotations can cause I-PCA to fail to converge. Standard PCA tracks the data correctly but suffers from eigenvector flipping, while only R2-PCA maintains stable eigenvectors throughout.
+              An interesting detail emerged when visualizing I-PCA’s eigenvectors—they 
+              extended slightly beyond the bounds of the unit circle. Upon investigation, 
+              this proved to be a stretching bug in the publicly available pip library. 
+              This example illustrates how visualization and simple test frameworks can 
+              isolate subtle but critical issues in complex, high-dimensional models.
+            </p>
+
+      </div>
+
+      <div class="main-box-base">
+        <div class="main-box-tab">NLP Visualization</div>
+        <div class="main-box-content">
+            <p> I believe that visual representations are essential for interpreting, 
+                communicating, and extending the power of language models. 
+                High-dimensional language data can be abstract and opaque—visuals bring clarity. 
+                From attention maps and embeddings to clustering patterns and model behaviors 
+                over time, well-designed visuals allow us to spot patterns, 
+                diagnose model failures, and communicate complex findings to technical and 
+                non-technical audiences alike. The two visuals below depicts sentences/documents visualized 
+                in lower dimensions using t-SNE as part of the <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4818564" target="_blank">R2-T2C</a> paper.</p>
+        </div>
+      </div>
+
+
+    <div class="image-grid">
+        <div class="edu-item"><img src="../assets/images/graphs/absolute2.png">
+        <p class="caption">TSNE Absolute Comparison (R2-T2C)</p></div>
+        <div class="edu-item"><img src="../assets/images/graphs/type_of_report_3.png">
+        <p class="caption">TSNE Relative Comparison (R2-T2C)</p></div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
